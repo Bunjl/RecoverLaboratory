@@ -8,7 +8,12 @@
  * Controller of the RecoverLaboratory
  */
 angular.module('RecoverLaboratory')
-  .controller('MainCtrl', function () {
+  .controller('MainCtrl', function ($scope) {
+
+  	$scope.friend = false;
+  	$scope.snake = false;
+  	$scope.me = false;
+
 
   	$('.whoareyou').typed({
     	strings: ["Who are you?"],

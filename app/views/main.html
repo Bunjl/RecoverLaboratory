@@ -175,23 +175,37 @@ function createDiv(height, width) {
 }
 // ]]>
 </script> 
+<!-- draft hearts -->
+
+
    <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-          <button class="btn whoareyou"></button>
-        <div class="row center">
-        </div>
-        <div class="row center">
-          <button class="btn friend"></button>
-          <button class="btn snake"></button>
-          <button class="btn me"></button>
+        <br><br>
+<!-- first set -->
 
-        </div> 
-        <br>
+        <div id="first-questions" ng-show="friend===false && snake===false && me === false">
+          <button class="btn whoareyou"></button>
+          <div class="row center">
+            <button class="btn friend" ng-click="friend=true;"></button>
+            <button class="btn snake" ng-click="snake=true;"></button>
+            <button class="btn me" ng-click="me=true;"></button>
+          </div> 
+          <br>
+        </div>
+
+<!-- Info set -->
+  <div id="info" ng-show="friend===true || snake===true || me === true">
+            <div class="row center">
+              <p>Infotastic</p>
+            </div> 
+            <br>
+          </div>
+
+
 
       </div>
     </div>
-    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
 
