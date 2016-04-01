@@ -25,12 +25,24 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
+      .when('/info', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+       .when('/crew', {
+        templateUrl: 'views/crew.html',
+        controller: 'crewCtrl',
+        controllerAs: 'crew'
+      })
+        .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'contactCtrl',
+        controllerAs: 'contact'
+      })
       .otherwise({
         redirectTo: '/'
       });
+        $(".button-collapse").sideNav();
+
   });

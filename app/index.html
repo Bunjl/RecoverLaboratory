@@ -22,14 +22,24 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- endbuild -->
   </head>
-    <nav ng-show="friend === true || snake === true || me === true">
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
+    <nav>
+    <div class="nav-wrapper black">
+      <a href="#" class="brand-logo">ReCo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down black">
+        <li><a href="#info">INFO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#">2015</a></li>
+        <li><a href="#">RECOVER</a></li>
+        <li><a href="#crew">CREW</a></li>
       </ul>
+       <ul id="slide-out" class="side-nav black">
+        <li><a href="#info">INFO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#">2015</a></li>
+        <li><a href="#">RECOVER</a></li>
+        <li><a href="#crew">CREW</a></li>
+      </ul>
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     </div>
   </nav>
         
@@ -71,6 +81,9 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/Materialize/bin/materialize.js"></script>
+    <script src="bower_components/typed.js/dist/typed.min.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <script src="bower_components/angular-typewrite/dist/angular-typewrite.js"></script>
     <script src="bower_components/lodash/lodash.js"></script>
     <script src="bower_components/angular-typer/dist/typer.min.js"></script>
     <!-- endbower -->
