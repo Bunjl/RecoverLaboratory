@@ -4,8 +4,21 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 @import "Materialize/sass/materialize.scss";
 // endbower
+.dark {background: rgba(0,0,0,0.55)!important;}
+.logo-gif {max-width:3em!important}
+.btn {background-color: rgba(0,0,0,0.55)!important;}
+body {
+    margin: 0;
+}
 
-.btn {background-color:black!important;}
+video {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
 body {
   background: #B7004E;
   height: 100%;
