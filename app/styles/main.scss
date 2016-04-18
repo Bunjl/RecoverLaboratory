@@ -30,6 +30,7 @@ video {
     top: 0;
     z-index: -1;
 }
+nav li {z-index: 10;}
 // snakes poem
 
 .snakes-en {
@@ -53,14 +54,13 @@ video {
     width: 100%;
     height: 200%;
     top:-10%;
+    z-index: -1;
     overflow: hidden;
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
 }
-
-p {z-index: 1;}
 
 body {
   background: #B7004E;
@@ -2486,3 +2486,159 @@ body {
 }
 
 
+// text
+body {
+  margin: 0px;
+}
+.animation-container {
+  background-color: #000;
+  color: #fff;
+  font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+  font-weight: 600;
+}
+
+.img-container {
+  width: 45%;
+  float: left;
+  position: relative;
+}
+
+.img-container img {
+opacity: 0;
+}
+
+
+.text-container {
+  position:relative;
+  width: 50%;
+  height: 100%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+/*  -webkit-mask-image: url(texture4.png);*/
+}
+
+#perspective-box {
+
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    margin-left: -350px;
+    width: 400px;
+    height: 600px;
+    -webkit-perspective: 1400px; /* Chrome, Safari, Opera */
+    -webkit-perspective-origin: 75% 40%; /* Chrome, Safari, Opera */
+    perspective: 1400px;
+    perspective-origin: 75% 40%;
+    opacity: 0;
+/*    -webkit-transition: perspective 500ms ease-in-out !important;
+    transition: perspective 500ms ease-in-out !important;*/
+
+}
+
+.blur-hed {
+    font-size: 50px;
+    line-height: 150px;
+    position: relative;
+    -webkit-transform: rotateY(-20deg); /* Chrome, Safari, Opera */
+    transform: rotateY(-25deg);
+  letter-spacing: 26px;
+  margin: auto;
+  width: 1100px;
+}
+.blur-hed2 {
+    font-size: 70px;
+   // line-height: 120px;
+    position: relative;
+    -webkit-transform: rotateY(-20deg); /* Chrome, Safari, Opera */
+    transform: rotateY(-25deg);
+  letter-spacing: 34px;
+  margin: auto;
+  width: 1100px;
+}
+.blur-dek {
+    position: relative;
+    -webkit-transform: rotateY(-25deg); /* Chrome, Safari, Opera */
+    transform: rotateY(-25deg);
+    //text-align: right;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 66px;
+    width: 1100px;
+    letter-spacing: 6px;
+}
+.blur-byline {
+    position: relative;
+    -webkit-transform: rotateY(-25deg); /* Chrome, Safari, Opera */
+    transform: rotateY(-25deg);
+    font-size: 44px;
+    font-weight: 700;
+    width: 1100px;
+    letter-spacing: 28px;
+    line-height: 60px;
+}
+.blur-byline2 {
+    position: relative;
+    -webkit-transform: rotateY(-25deg); /* Chrome, Safari, Opera */
+    transform: rotateY(-25deg);
+    font-size: 60px;
+    font-weight: 700;
+    width: 1100px;
+    letter-spacing: 46px;
+    line-height: 50px;
+}
+.blur-byline3 {
+    position: relative;
+    -webkit-transform: rotateY(-25deg); /* Chrome, Safari, Opera */
+    transform: rotateY(-25deg);
+    font-size: 30px;
+    font-weight: 700;
+    width: 1100px;
+    letter-spacing: 20px;
+    line-height: 50px;
+}
+.blur-byline4 {
+    position: relative;
+    -webkit-transform: rotateY(-25deg); /* Chrome, Safari, Opera */
+    transform: rotateY(-25deg);
+    font-size: 48px;
+    font-weight: 700;
+    width: 1100px;
+    letter-spacing: 30px;
+    line-height: 50px;
+}
+.blur-byline5 {
+    position: relative;
+    -webkit-transform: rotateY(-25deg); /* Chrome, Safari, Opera */
+    transform: rotateY(-25deg);
+    font-size: 90px;
+    font-weight: 700;
+    width: 1100px;
+    letter-spacing: 34px;
+    line-height: 10px;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+
+@media only screen and (max-device-width: 1024px) {
+  .img-container {
+    width: 100%;
+
+  }
+  .text-container {
+    width: 100%;
+
+    }
+}

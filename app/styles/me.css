@@ -1,0 +1,26 @@
+figure {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/111863/ja-face-bg-full.png");
+  background-size: contain;
+  background-position: center;
+  margin: 0;
+}
+
+figure,
+canvas {
+  width: 400px;
+  height: 334px;
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #fff!important;
+  overflow: hidden;
+}

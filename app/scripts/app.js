@@ -35,6 +35,26 @@ angular
         controller: 'crewCtrl',
         controllerAs: 'crew'
       })
+      .when('/friend', {
+        templateUrl: 'views/friend.html',
+        controller: 'FriendCtrl',
+        controllerAs: 'friend'
+      })
+      .when('/snake', {
+        templateUrl: 'views/snake.html',
+        controller: 'SnakeCtrl',
+        controllerAs: 'snake'
+      })
+      .when('/illusion', {
+        templateUrl: 'views/illusion.html',
+        controller: 'IllusionCtrl',
+        controllerAs: 'illusion'
+      })
+      .when('/me', {
+        templateUrl: 'views/me.html',
+        controller: 'MeCtrl',
+        controllerAs: 'me'
+      })
         .when('/contact', {
         templateUrl: 'views/contact.html',
         controller: 'contactCtrl',

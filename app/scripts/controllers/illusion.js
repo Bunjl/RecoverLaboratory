@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name RecoverLaboratory.controller:MainCtrl
+ * @name RecoverLaboratory.controller:IllusionCtrl
  * @description
- * # MainCtrl
+ * # IllusionCtrl
  * Controller of the RecoverLaboratory
  */
 angular.module('RecoverLaboratory')
-  .controller('MainCtrl', function ($scope) {
+  .controller('IllusionCtrl', function ($scope) {
 
   	$scope.friend = false;
   	$scope.snake = false;
