@@ -45,6 +45,11 @@ angular
         controller: 'SnakeCtrl',
         controllerAs: 'snake'
       })
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'ContactCtrl',
+        controllerAs: 'contact'
+      })
       .when('/illusion', {
         templateUrl: 'views/illusion.html',
         controller: 'IllusionCtrl',

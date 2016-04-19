@@ -20,7 +20,7 @@ angular.module('RecoverLaboratory')
 	  var $img = $(".img-container img");
 	  var pageWidth, pageHeight;
 	  var basePage = {
-	    width: 1100,
+	    width: 2100,
 	    height: 500,
 	    scale: 1,
 	    scaleX: 1,
@@ -71,9 +71,9 @@ angular.module('RecoverLaboratory')
 	    var blurAmount
 	    extraBlur = extraBlur || 0;
 	    if (i < middleOfString) {
-	      blurAmount = (middleOfString - i) * (fontSize / 28) + extraBlur;
+	      blurAmount = (middleOfString - i) * (fontSize / 38) + extraBlur;
 	    } else {
-	      blurAmount = (i - middleOfString) * (fontSize / 28) + extraBlur;
+	      blurAmount = (i - middleOfString) * (fontSize / 38) + extraBlur;
 	    }
 	    return blurAmount;
 	  };
@@ -185,7 +185,7 @@ angular.module('RecoverLaboratory')
 
 	  $page.animate({
 	    "opacity": "1",
-	    "perspective": "1100px"
+	    "perspective": "2000px"
 	  }, 4000, "swing", function() {
 	    $page.css({
 	      "transition": "all 500ms ease-in-out, perspective 1ms",
@@ -211,7 +211,7 @@ angular.module('RecoverLaboratory')
 	    basePage.scale = (scaleX > scaleY) ? scaleY : scaleX;
 
 	    var newLeftPos = Math.abs(Math.floor(((basePage.width * basePage.scale) - maxWidth) / 2));
-	    var newTopPos = Math.abs(Math.floor(((basePage.height * basePage.scale) - maxHeight) / 2));
+	    var newTopPos = Math.abs(Math.floor(((basePage.height * basePage.scale) - maxHeight) / 100));
 
 	    page.css({
 	      "-webkit-transform": "scale(" + basePage.scale + ")",
@@ -224,16 +224,16 @@ angular.module('RecoverLaboratory')
 	  //above function doesn't position the resized box very well. this adjusts margins to help out.
 	  function addMargins(page) {
 	    var newTopMarg = 0;
-	    var newLeftMarg = -350;
+	    var newLeftMarg = -60;
 	    if (pageWidth >= 775) {
-	      newTopMarg = (pageWidth * .25);
+	      newTopMarg = //(pageWidth * .15 * .15 );
 	      newLeftMarg = -250;
 	    } else {
-	      newTopMarg = -(140 - (pageWidth * .13));
+	      newTopMarg = -200// -(140 - (pageWidth * .05 * .10));
 	    }
 	    page.css({
 	      "margin-top": newTopMarg + "px",
-	      "margin-left": newLeftMarg + "px"
+	      "margin-left": newLeftMarg + "%"
 	    });
 	  }
 	});

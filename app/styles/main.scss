@@ -2540,8 +2540,8 @@ opacity: 0;
     font-size: 50px;
     line-height: 150px;
     position: relative;
-    -webkit-transform: rotateY(-20deg); /* Chrome, Safari, Opera */
-    transform: rotateY(-25deg);
+    -webkit-transform: rotateY(-10deg); /* Chrome, Safari, Opera */
+    transform: rotateY(-15deg);
   letter-spacing: 26px;
   margin: auto;
   width: 1100px;
@@ -2550,16 +2550,16 @@ opacity: 0;
     font-size: 70px;
    // line-height: 120px;
     position: relative;
-    -webkit-transform: rotateY(-20deg); /* Chrome, Safari, Opera */
-    transform: rotateY(-25deg);
+    -webkit-transform: rotateY(-10deg); /* Chrome, Safari, Opera */
+    transform: rotateY(-15deg);
   letter-spacing: 34px;
   margin: auto;
   width: 1100px;
 }
 .blur-dek {
     position: relative;
-    -webkit-transform: rotateY(-25deg); /* Chrome, Safari, Opera */
-    transform: rotateY(-25deg);
+    -webkit-transform: rotateY(-15deg); /* Chrome, Safari, Opera */
+    transform: rotateY(-15deg);
     //text-align: right;
     font-weight: 500;
     font-size: 44px;
@@ -2569,8 +2569,8 @@ opacity: 0;
 }
 .blur-byline {
     position: relative;
-    -webkit-transform: rotateY(-25deg); /* Chrome, Safari, Opera */
-    transform: rotateY(-25deg);
+    -webkit-transform: rotateY(-15deg); /* Chrome, Safari, Opera */
+    transform: rotateY(-15deg);
     font-size: 44px;
     font-weight: 700;
     width: 1100px;
@@ -2579,8 +2579,8 @@ opacity: 0;
 }
 .blur-byline2 {
     position: relative;
-    -webkit-transform: rotateY(-25deg); /* Chrome, Safari, Opera */
-    transform: rotateY(-25deg);
+    -webkit-transform: rotateY(-15deg); /* Chrome, Safari, Opera */
+    transform: rotateY(-15deg);
     font-size: 60px;
     font-weight: 700;
     width: 1100px;
@@ -2589,8 +2589,8 @@ opacity: 0;
 }
 .blur-byline3 {
     position: relative;
-    -webkit-transform: rotateY(-25deg); /* Chrome, Safari, Opera */
-    transform: rotateY(-25deg);
+    -webkit-transform: rotateY(-15deg); /* Chrome, Safari, Opera */
+    transform: rotateY(-15deg);
     font-size: 30px;
     font-weight: 700;
     width: 1100px;
@@ -2599,8 +2599,8 @@ opacity: 0;
 }
 .blur-byline4 {
     position: relative;
-    -webkit-transform: rotateY(-25deg); /* Chrome, Safari, Opera */
-    transform: rotateY(-25deg);
+    -webkit-transform: rotateY(-15deg); /* Chrome, Safari, Opera */
+    transform: rotateY(-15deg);
     font-size: 48px;
     font-weight: 700;
     width: 1100px;
@@ -2609,8 +2609,8 @@ opacity: 0;
 }
 .blur-byline5 {
     position: relative;
-    -webkit-transform: rotateY(-25deg); /* Chrome, Safari, Opera */
-    transform: rotateY(-25deg);
+    -webkit-transform: rotateY(-15deg); /* Chrome, Safari, Opera */
+    transform: rotateY(-15deg);
     font-size: 90px;
     font-weight: 700;
     width: 1100px;
@@ -2642,3 +2642,7 @@ opacity: 0;
 
     }
 }
+
+// vimeo trick 
+.vimeo {display:block; width:638px; height:358px; margin:0 auto;}
+
