@@ -9,8 +9,6 @@
  */
 angular.module('RecoverLaboratory')
   .controller('FriendCtrl', function ($scope) {
-	$scope.iAmAFriend = function(){
-		
 		var HeartsBackground = {
 		  heartHeight: 60,
 		  heartWidth: 64,
@@ -75,6 +73,6 @@ angular.module('RecoverLaboratory')
 		$(document).ready(function() {
 		  HeartsBackground.initialize();
 		});
-  	};	
+  		
 
   });
