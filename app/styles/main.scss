@@ -7,7 +7,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   src:url('../fonts/choplin/Choplin-ExtraLight-DEMO.otf') format('embedded-opentype'),
     url('../fonts/choplin/Choplin-ExtraLight-DEMO.otf') format('woff'),
 }
- html, p {
+ html, p, nav, label, input{
     font-family: 'choplin',GillSans, Calibri, Trebuchet, sans-serif;
   }
 // bower:scss
