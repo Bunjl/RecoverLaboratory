@@ -10,8 +10,6 @@
 angular.module('RecoverLaboratory')
   .controller('IllusionCtrl', function ($scope) {
 
-  	$scope.friend = false;
-  	$scope.snake = false;
-  	$scope.me = false;
+
 	
   });
