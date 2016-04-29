@@ -8,6 +8,6 @@
  * Controller of the RecoverLaboratory
  */
 angular.module('RecoverLaboratory')
-  .controller('ContactCtrl', function ($scope) {
-
+  .controller('ContactCtrl', function ($scope, User) {
+  	  	console.log(User.getCurrentUser());
   });

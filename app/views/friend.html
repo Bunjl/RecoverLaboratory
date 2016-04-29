@@ -1,4 +1,137 @@
-<canvas id="canvas" style="position:fixed;top:0;left:0; z-index: -1;"></canvas>
+<!-- me -->
+<div ng-if="me">
+<figure></figure>
+<canvas id="eye-l" width="800" height="668"></canvas>
+        <div class="col s12">
+            <h5>
+             <p class="teal-text snakes-fi ">Neljä käärmettä liukuu</p>
+             <p class="orange-text snakes-en">Four snakes sliding in a pit </p>
+
+             <p class="teal-text snakes-fi">liukuu kuopassa</p>
+             <p  class="orange-text snakes-en">not to eat </p>
+
+             <p class="teal-text snakes-fi">ei syödäkseen</p>
+             <p class="orange-text snakes-en">not to love </p>
+
+              <p class="teal-text snakes-fi">but only to</p>
+              <p class="orange-text snakes-en">ei rakastaakseen</p>
+
+             <p class="teal-text snakes-fi">vaan vain</p>
+             <p class="green-text snakes-en">slither</p>
+
+              <p class="teal-text snakes-fi">liukuakseen</p>
+
+             </h5>
+          </div> 
+
+<canvas id="eye-r" width="800" height="668"></canvas>
+<div class="row">
+      <div class="col s12 m10 offset-m1">
+          <p class="white-text">Here the freedom is yours and you are in charge of your experience. You may gain new ways of thinking, begin to question things and detach yourself from the mundane. In the labyrinth you will face the world alone and the choices are yours.</p>
+
+          <p class="center white-text">Experiential circus arts production, a labyrinth under the ground.</p>
+          <p class="center white-text">Premiere in August 2016</p>
+          <p class="center white-text">Dates coming soon</p>
+        </div>
+        <div class="col s12 m10 offset-m1">
+          <div class="video-container responsive-video">
+            <iframe src="https://player.vimeo.com/video/161487821" width="640" height="470" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+     </div>
+<canvas id="mouth" width="800" height="668"></canvas>
+ <div class="row center">
+        <div class="col s4 offset-s4">
+  <!-- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup">
+      <form action="//recoverlaboratory.us13.list-manage.com/subscribe/post?u=7a6c7100a0c0bfa507512184d&amp;id=859da25967" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <label for="mce-EMAIL">Let us slide in your inbox</label>
+        <input type="email" value="" name="EMAIL" class="email center" id="mce-EMAIL" placeholder="leave your email for us" required>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7a6c7100a0c0bfa507512184d_859da25967" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
+      </form>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+<!-- illusion -->
+
+<filter ng-if="illusion" id='blur'>
+    <fegaussianblur stddeviation='10'></fegaussianblur>
+  </filter>
+</svg>
+<div class='h' ng-if="illusion">
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+</div>
+
+
+<!--friend -->
+<canvas ng-show="friend" id="canvas" style="position:fixed;top:0;left:0; z-index: -1;"></canvas>
+<!-- snake -->
+<div ng-if="snake" class="animated infinite pulse" id="snake"></div>
+
  <!-- Info set -->
   <div id="info" >
       <div class="row center">

@@ -1,11 +1,3 @@
-<!--<video ng-show="friend === false && snake === false && me === false"  autoplay class="responsive-video" loop>
-  <source src="video/comingSoon.m4v" type="video/mp4">
-  <source src="video/comingSoon.ogg" type="video/ogg">
-  <source src="video/comingSoon.webm" type="video/webm">
-  Your browser does not support the <code>video</code> element.
-</video>-->
-
-
 <div ng-if="snake" class="animated infinite pulse" id="snake"></div>
    <div class="section no-pad-bot">
 <!-- first set -->
@@ -17,22 +9,22 @@
           </button>
               <div class="row">
                   <div class="col s12 m3">
-                      <a class="btn dark friend" ng-click="setPathToFollow(friend)" href="#friend">
+                      <a class="btn dark friend" ng-click="setPathToFollow('friend')" ng-href="#friend">
                         <typer words="['A Friend?']" cursor="_" highlight-background="#2980b9" highlight-color="#2ecc71" start-delay="3000" type-time='150' repeat="false" start-typing="true" ></typer>
                       </a>
                   </div>
                   <div class="col s12 m3">
-                      <a class="btn dark snake" ng-click="setPathToFollow(snake)" ng-href="#snake">
+                      <a class="btn dark snake" ng-click="setPathToFollow('snake')" ng-href="#friend">
                         <typer words="['A Snake?']" cursor="_" highlight-background="#2980b9" highlight-color="#2ecc71"start-delay="4500" type-time='150' repeat="false" start-typing="true" ></typer>
                       </a>
                   </div>
                   <div class="col s12 m3">
-                     <a class="btn dark me" href="#me">
+                     <a class="btn dark me" ng-click="setPathToFollow('me')" ng-href="#friend">
                         <typer words="['me?']" cursor="_" start-delay="6000" type-time='150' highlight-background="#2980b9" highlight-color="#2ecc71" repeat="false" start-typing="true" ></typer>
                      </a>
                   </div>
                    <div class="col s12 m3">
-                     <a class="btn dark me" href="#illusion">
+                     <a class="btn dark me" ng-click="setPathToFollow('illusion')" ng-href="#friend">
                         <typer words="['an illusion?']" cursor="_" start-delay="6000" type-time='150' highlight-background="#2980b9" highlight-color="#2ecc71" repeat="false" start-typing="true" ></typer>
                      </a>
                   </div>

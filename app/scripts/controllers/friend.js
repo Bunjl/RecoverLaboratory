@@ -8,7 +8,26 @@
  * Controller of the RecoverLaboratory
  */
 angular.module('RecoverLaboratory')
-  .controller('FriendCtrl', function ($scope) {
+  .controller('FriendCtrl', function ($scope, User) {
+  	// path chosen.
+  	$scope.choice = User.getCurrentUser();
+
+  	if($scope.choice === 'snake'){
+  		$scope.snake = true;
+  	}else if($scope.choice === 'me'){
+  		$scope.me = true;
+  	}else if($scope.choice === 'illusion'){
+  		$scope.illusion = true;
+
+  	}else if($scope.choice === 'friend'){
+  		$scope.friend = true;
+  	}else{
+  		$scope.none = true;
+  	}
+  	
+
+
+  	if($scope.friend){
 		var HeartsBackground = {
 		  heartHeight: 60,
 		  heartWidth: 64,
@@ -73,6 +92,6 @@ angular.module('RecoverLaboratory')
 		$(document).ready(function() {
 		  HeartsBackground.initialize();
 		});
-  		
+	}  		
 
   });

@@ -8,8 +8,9 @@
  * Controller of the RecoverLaboratory
  */
 angular.module('RecoverLaboratory')
-  .controller('IllusionCtrl', function ($scope) {
+  .controller('IllusionCtrl', function ($scope, User) {
 
+  	console.log(User.getCurrentUser());
 
 	
   });

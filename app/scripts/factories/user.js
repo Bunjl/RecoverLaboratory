@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('RecoverLaboratory')
-  .factory('User', function Auth($rootScope) {
+  .factory('User', function Auth($rootScope, $cookies) {
 
     return {
       /**
@@ -10,12 +10,15 @@ angular.module('RecoverLaboratory')
        * @return {Object} user
        */
       setCurrentUser: function(selection) {
+        console.log(selection);
          $rootScope.currentUser = selection;
+          $cookies.put('choice', selection);
+
       },
 
       getCurrentUser: function() {
-        console.log($rootScope.currentUser)
-          return $rootScope.currentUser;
+        var userChoice = $cookies.get('choice');
+          return userChoice;
       },
 
     };
