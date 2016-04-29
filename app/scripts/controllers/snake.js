@@ -8,7 +8,8 @@
  * Controller of the RecoverLaboratory
  */
 angular.module('RecoverLaboratory')
-  .controller('SnakeCtrl', function ($scope) {
+  .controller('SnakeCtrl', function ($scope, User) {
+  	console.log(User.getCurrentUser());
 
   	//in this codepen i wrap letters in spans, which allows me to modify each letter programatically. i then create a function to modify the blur factor on each letter based on the distance from the center of the word, and apply an additional blur and fade effect on scroll based on the users scroll position. finally, because the div containing the text must have an absolute pixel width because of the perspective shift, i use a function to apply a scale to the text container which allows the text to scale responsively to the screen.
 

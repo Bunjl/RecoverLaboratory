@@ -8,10 +8,10 @@
  * Controller of the RecoverLaboratory
  */
 angular.module('RecoverLaboratory')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function ($scope, User, $location) {
 
-  	$scope.friend = false;
-  	$scope.snake = false;
-  	$scope.me = false;
+  	$scope.setPathToFollow =  function(choice){
+  		User.setCurrentUser(choice);
+  	}
 	
   });

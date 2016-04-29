@@ -12,17 +12,17 @@
 <div class="row center">
           <br><br><br>
 
- <div id="first-questions" ng-show="friend === false && snake === false && me === false">
+ <div id="first-questions">
           <button class="btn whoareyou"><typer words="['Who are you?']" cursor="_" start-delay="1000" type-time='150' pause="60000" repeat="true" start-typing="true" ></typer>
           </button>
               <div class="row">
                   <div class="col s12 m3">
-                      <a class="btn dark friend" href="#friend">
+                      <a class="btn dark friend" ng-click="setPathToFollow(friend)" href="#friend">
                         <typer words="['A Friend?']" cursor="_" highlight-background="#2980b9" highlight-color="#2ecc71" start-delay="3000" type-time='150' repeat="false" start-typing="true" ></typer>
                       </a>
                   </div>
                   <div class="col s12 m3">
-                      <a class="btn dark snake" href="#snake">
+                      <a class="btn dark snake" ng-click="setPathToFollow(snake)" ng-href="#snake">
                         <typer words="['A Snake?']" cursor="_" highlight-background="#2980b9" highlight-color="#2ecc71"start-delay="4500" type-time='150' repeat="false" start-typing="true" ></typer>
                       </a>
                   </div>
