@@ -27,6 +27,9 @@ angular.module('RecoverLaboratory')
   	
 
 
+
+// if friend chosen
+
   	if($scope.friend){
 		var HeartsBackground = {
 		  heartHeight: 60,

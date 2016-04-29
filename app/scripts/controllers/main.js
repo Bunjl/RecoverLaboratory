@@ -9,7 +9,6 @@
  */
 angular.module('RecoverLaboratory')
   .controller('MainCtrl', function ($scope, User, $location) {
-
   	$scope.setPathToFollow =  function(choice){
   		User.setCurrentUser(choice);
   	}
