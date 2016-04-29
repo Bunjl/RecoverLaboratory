@@ -61,11 +61,6 @@ angular
         controller: 'MeCtrl',
         controllerAs: 'me'
       })
-        .when('/contact', {
-        templateUrl: 'views/contact.html',
-        controller: 'contactCtrl',
-        controllerAs: 'contact'
-      })
       .otherwise({
         redirectTo: '/'
       });
