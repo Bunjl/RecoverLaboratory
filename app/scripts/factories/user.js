@@ -448,9 +448,7 @@ angular.module('RecoverLaboratory')
       }
     };
 
-     $(document).ready(function() {
         HeartsBackground.initialize();
-      });
       }
 
     };
