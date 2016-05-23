@@ -61,6 +61,11 @@ angular
         controller: 'MeCtrl',
         controllerAs: 'me'
       })
+      .when('/2015', {
+        templateUrl: 'views/2015.html',
+        controller: '2015Ctrl',
+        controllerAs: '2015'
+      })
       .otherwise({
         redirectTo: '/'
       });

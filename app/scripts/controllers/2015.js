@@ -2,16 +2,15 @@
 
 /**
  * @ngdoc function
- * @name RecoverLaboratory.controller:AboutCtrl
+ * @name RecoverLaboratory.controller:2015Ctrl
  * @description
- * # AboutCtrl
+ * # 2015Ctrl
  * Controller of the RecoverLaboratory
  */
 angular.module('RecoverLaboratory')
-  .controller('AboutCtrl', function ($scope, User) {
-  	// path chosen.
-  	$scope.choice = User.getCurrentUser();
+  .controller('2015Ctrl', function ($scope, User) {
 
+  	
   	if($scope.choice === 'snake'){
   		$scope.snake = true;
   		 User.getSnake();
@@ -22,11 +21,9 @@ angular.module('RecoverLaboratory')
   		$scope.illusion = true;
   	}else if($scope.choice === 'friend'){
   		$scope.friend = true;
+  		User.getFriend();
   	}else{
   		$scope.none = true;
   	}
 	
-  	if($scope.friend){
-  		User.getFriend();
-  	}
   });

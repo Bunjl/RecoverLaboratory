@@ -11,7 +11,6 @@ angular.module('RecoverLaboratory')
   .controller('ContactCtrl', function ($scope, User) {
   	$scope.choice = User.getCurrentUser();
 
-
   	if($scope.choice === 'snake'){
   		$scope.snake = true;
   		 User.getSnake();

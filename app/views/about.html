@@ -1,27 +1,157 @@
-<nav>
-  <div class="nav-wrapper center-align">
+  <nav>
+    <div class="nav-wrapper center-align">
     <div class="row">
       <div class="col s12 no-padding">
         <a href="#/" class=" center"><img id="logo" src="images/logo.png"></a>
-      </div>
-      <div class="col s12 m6 offset-m4 no-padding center">
-        <ul id="nav-mobile" class="black center">
-          <li><a href="#info">INFO</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-          <li><a href="#2015">2015</a></li>
-          <li><a href="#recover">RECOVER</a></li>
-          <li><a href="#crew">CREW</a></li>
-        </ul>
-      </div>
-    </div> 
-  </div>
-</nav>
-<div class="row">
-  <div class="col s12 center">
-    <p class="white-text">Here the freedom is yours and you are in charge of your experience. You may gain new ways of thinking, begin to question things and detach yourself from the mundane. In the labyrinth you will face the world alone and the choices are yours. You will get to observe the natural, yet absurd cycles of life close up.
-    </p>
-    <h3 class="white-text">Premiere in 25.8</h3>
-    <p class="white-text">Labyrinth open between 26.8 - 25.9 <p>
+    </div>
+    <div class="col s12 m6 offset-m4 no-padding center">
+      <ul id="nav-mobile" class="black center">
+        <li><a href="#info">INFO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#2015">2015</a></li>
+        <li><a href="#friend">RECOVER</a></li>
+        <li><a href="#crew">CREW</a></li>
+      </ul>
 
+    </div> 
+    </div>
+  </nav>
+<!-- me -->
+<div ng-show="me">
+<figure></figure>
+<canvas id="eye-l" width="800" height="668"></canvas>
+
+<canvas id="eye-r" width="800" height="668"></canvas>
+<div class="row">
+      <div class="col s12 m10 offset-m1">
+         <p class="white-text center">Here the freedom is yours and you are in charge of your experience. You may gain new ways of thinking, begin to question things and detach yourself from the mundane. In the labyrinth you will face the world alone and the choices are yours. You will get to observe the natural, yet absurd cycles of life close up.
+          </p>
+          <h3 class="white-text center">Premiere in 25.8</h3>
+          <p class="white-text center">Labyrinth open between 26.8 - 25.9 <p>
+      </div>
+     </div>
+<canvas id="mouth" width="800" height="668"></canvas>
+ <div class="row center">
+        <div class="col s4 offset-s4">
+  <!-- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup">
+      <form action="//recoverlaboratory.us13.list-manage.com/subscribe/post?u=7a6c7100a0c0bfa507512184d&amp;id=859da25967" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <label for="mce-EMAIL">Let us slide in your inbox</label>
+        <input type="email" value="" name="EMAIL" class="email center" id="mce-EMAIL" placeholder="leave your email for us" required>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7a6c7100a0c0bfa507512184d_859da25967" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
+      </form>
+      </div>
+    </div>
   </div>
+  </div>
+
+
+<!-- illusion -->
+
+<filter ng-if="illusion" id='blur'>
+    <fegaussianblur stddeviation='10'></fegaussianblur>
+  </filter>
+</svg>
+<div class='h' ng-if="illusion">
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+  <div class='c'></div>
+</div>
+
+<!--friend -->
+<canvas ng-show="friend" id="canvas" style="position:fixed;top:0;left:0; z-index: -1;"></canvas>
+<!-- snake -->
+<div ng-if="snake" class="animated infinite pulse" id="snake"></div>
+
+ <!-- Info set -->
+  <div id="info" >
+    <div class="row">
+      <div class="col s12 m10 offset-m1"><br>
+          <p class="white-text center">Here the freedom is yours and you are in charge of your experience. You may gain new ways of thinking, begin to question things and detach yourself from the mundane. In the labyrinth you will face the world alone and the choices are yours. You will get to observe the natural, yet absurd cycles of life close up.
+          </p>
+          <h3 class="white-text center">Premiere in 25.8</h3>
+          <p class="white-text center">Labyrinth open between 26.8 - 25.9 <p>
+        </div>
+        <div class="col s12 m10 offset-m1">
+        <br><br>
+          <div class="video-container responsive-video">
+            <iframe src="https://player.vimeo.com/video/161487821" width="640" height="470" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+     </div>
+      <div class="row center">
+        <div class="col s4 offset-s4">
+  <!-- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup">
+      <form action="//recoverlaboratory.us13.list-manage.com/subscribe/post?u=7a6c7100a0c0bfa507512184d&amp;id=859da25967" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <label for="mce-EMAIL">Let us slide in your inbox</label>
+        <input type="email" value="" name="EMAIL" class="email center" id="mce-EMAIL" placeholder="leave your email for us" required>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7a6c7100a0c0bfa507512184d_859da25967" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
+      </form>
+      </div>
+    </div>
+  </div>
+
+
 
