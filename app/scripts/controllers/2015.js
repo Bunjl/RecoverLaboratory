@@ -9,8 +9,7 @@
  */
 angular.module('RecoverLaboratory')
   .controller('2015Ctrl', function ($scope, User) {
-
-  	
+    console.log('here')
   	if($scope.choice === 'snake'){
   		$scope.snake = true;
   		 User.getSnake();
