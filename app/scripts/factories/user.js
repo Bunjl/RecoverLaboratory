@@ -55,8 +55,8 @@ angular.module('RecoverLaboratory')
               JAF.ctx_eye_l = JAF.cvs_eye_l.getContext("2d");
               JAF.cvs_eye_r = document.getElementById("eye-r");
               JAF.ctx_eye_r = JAF.cvs_eye_r.getContext("2d");
-              JAF.width = 800;
-              JAF.height = 668;
+              JAF.width = 400;
+              JAF.height = 368;
             }
 
             function loadImages() {

@@ -19,39 +19,23 @@
 <!-- me -->
 <div ng-show="me">
 <figure></figure>
-<canvas id="eye-l" width="800" height="668"></canvas>
+<canvas style="position:absolute;right:0%;float:right;z-index:-1;" id="eye-l" width="400" height="368"></canvas>
 
-<canvas id="eye-r" width="800" height="668"></canvas>
 <div class="row">
       <div class="col s12 m10 offset-m1">
         <p class="center white-text">We are a group of artists from different fields of art: circus, fine art, music, light and other medias. We build experimental labyrinths. Our performances combine all these art forms, creating worlds that compete with 3D-movies and video games.</p>
 
         <p class="center white-text">Our work contemplates personal freedom and an individual’s choices. In the labyrinth, the viewer is lost in time, space and dimension and in their head. The goal is to trigger emotions and thoughts, and also to fade out the ”fourth wall” between the performer and the viewer, by bringing them together on the same level, able to make contact if the viewer so desires.</p>
+<canvas style="position:absolute;left:-200px;float:leftz-index:-1;" id="eye-r" width="400" height="368"></canvas>
 
         <p class="center white-text">We aim to give the viewer the ultimate experience of performance art. The audience gets absorbed in the surreal world of the human psyche one by one, as they enter the labyrinth alone. We are interested in individuals inside groups. Can peoples’ reactions and choices be affected through art?</p>
 
         <p class="center white-text">Here the freedom is yours and you are in charge of your experience. You may gain new ways of thinking, begin to question things and detach yourself from the mundane. In the labyrinth you will face the world alone and the choices are yours. You will get to observe the natural, yet absurd cycles of life close up.</p>
       </div>
-        <div class="col s12 m10 offset-m1">
-          <br><br>
-          <div class="video-container responsive-video">
-            <iframe src="https://player.vimeo.com/video/161487821" width="640" height="470" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-        </div>
      </div>
-<canvas id="mouth" width="800" height="668"></canvas>
  <div class="row center">
-        <div class="col s4 offset-s4">
-  <!-- Begin MailChimp Signup Form -->
-      <div id="mc_embed_signup">
-      <form action="//recoverlaboratory.us13.list-manage.com/subscribe/post?u=7a6c7100a0c0bfa507512184d&amp;id=859da25967" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <label for="mce-EMAIL">Let us slide in your inbox</label>
-        <input type="email" value="" name="EMAIL" class="email center" id="mce-EMAIL" placeholder="leave your email for us" required>
-          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7a6c7100a0c0bfa507512184d_859da25967" tabindex="-1" value=""></div>
-          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
-      </form>
-      </div>
+ <canvas style="position:absolute;right:0%;float:right;z-index:-1;" id="mouth" width="400" height="368"></canvas>
+
     </div>
   </div>
   </div>
@@ -174,7 +158,7 @@
         </div>
     </div>
     <div class="row">
-      <div class="col s12 m10 offset-m1"><br>
+      <div class="col s12 m10 offset-m1" ng-hide="me"><br>
            <p class="center white-text">We are a group of artists from different fields of art: circus, fine art, music, light and other medias. We build experimental labyrinths. Our performances combine all these art forms, creating worlds that compete with 3D-movies and video games.</p>
 
           <p class="center white-text">Our work contemplates personal freedom and an individual’s choices. In the labyrinth, the viewer is lost in time, space and dimension and in their head. The goal is to trigger emotions and thoughts, and also to fade out the ”fourth wall” between the performer and the viewer, by bringing them together on the same level, able to make contact if the viewer so desires.</p>
