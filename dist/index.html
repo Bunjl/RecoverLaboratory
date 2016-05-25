@@ -1,9 +1,88 @@
-<!doctype html> <html> <head> <meta charset="utf-8"> <title>RecoverLaboratory</title> <meta name="description" content=""> <meta name="viewport" content="width=device-width"> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="styles/vendor.c49ba32d.css"> <link rel="stylesheet" href="styles/main.a86db5c2.css"> </head> <body class="black" ng-app="RecoverLaboratory"> <!--[if lte IE 8]>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>RecoverLaboratory</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/Materialize/bin/materialize.css" />
+    <link rel="stylesheet" href="bower_components/angular-typewrite/dist/angular-typewrite.css" />
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/me.css">
+    <link rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/mockup1.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.min.css">
+    <script src="js/modernizr.custom.js"></script>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+
+        
+  <body class="black" ng-app="RecoverLaboratory">
+    <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--> <!-- Add your site or application content here --> <div ng-view=""></div> <script>!function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+
+
+    <div ng-view=""></div>
+
+
+
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
        (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
        r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
        }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
        ga('create', 'UA-76612751-1');
-       ga('send', 'pageview');</script> <script src="scripts/vendor.59d903c7.js"></script> <script src="scripts/scripts.81fb567e.js"></script> </body> </html>
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular.min.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular-animate.min.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular-resource.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular-route.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular-sanitize.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular-touch.min.js"></script>
+    <script src="bower_components/Materialize/bin/materialize.js"></script>
+    <script src="bower_components/typed.js/dist/typed.min.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <script src="bower_components/angular-typewrite/dist/angular-typewrite.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
+    <script src="bower_components/angular-typer/dist/typer.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/factories/user.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/2015.js"></script>
+        <script src="scripts/controllers/contact.js"></script>
+        <script src="scripts/controllers/me.js"></script>
+        <script src="scripts/controllers/friend.js"></script>
+        <script src="scripts/controllers/snake.js"></script>
+        <script src="scripts/controllers/illusion.js"></script>
+        <script src="scripts/controllers/crew.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
