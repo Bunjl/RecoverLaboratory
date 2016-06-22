@@ -2651,3 +2651,269 @@ opacity: 0;
 // vimeo trick 
 .vimeo {display:block; width:638px; height:358px; margin:0 auto;}
 
+
+@import url("https://fonts.googleapis.com/css?family=Lato:900italic");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Bangers");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab:100");
+@import url("https://fonts.googleapis.com/css?family=UbuntuMono");
+
+h1 {
+  margin: 0;
+  font-size: 5vw;
+  font-weight: 100;
+  -webkit-text-stroke-width: 3px;
+  -webkit-animation: flashing-lights 0.366666666666667s cubic-bezier(0, 1, 0, 1) infinite, flashing-fonts 4s cubic-bezier(0, 1, 0, 1) infinite, flashing-size 3s cubic-bezier(0, 1, 0, 1) infinite;
+          animation: flashing-lights 0.366666666666667s cubic-bezier(0, 1, 0, 1) infinite, flashing-fonts 4s cubic-bezier(0, 1, 0, 1) infinite, flashing-size 3s cubic-bezier(0, 1, 0, 1) infinite;
+}
+h1:before {
+  content: 'tickets';
+  -webkit-animation: flashing-text 1s infinite;
+          animation: flashing-text 1s infinite;
+}
+@-webkit-keyframes flashing-lights {
+  0% {
+    -webkit-text-stroke-color: #f00;
+  }
+  16.6% {
+    -webkit-text-stroke-color: #008000;
+  }
+  33.3% {
+    -webkit-text-stroke-color: #800080;
+  }
+  50% {
+    -webkit-text-stroke-color: #ff0;
+  }
+  66.6% {
+    -webkit-text-stroke-color: #00f;
+  }
+  83.3% {
+    -webkit-text-stroke-color: #ffa500;
+  }
+}
+@keyframes flashing-lights {
+  0% {
+    -webkit-text-stroke-color: #f00;
+  }
+  16.6% {
+    -webkit-text-stroke-color: #008000;
+  }
+  33.3% {
+    -webkit-text-stroke-color: #800080;
+  }
+  50% {
+    -webkit-text-stroke-color: #ff0;
+  }
+  66.6% {
+    -webkit-text-stroke-color: #00f;
+  }
+  83.3% {
+    -webkit-text-stroke-color: #ffa500;
+  }
+}
+@-webkit-keyframes flashing-fonts {
+  0% {
+    font-family: 'Lato';
+  }
+  6.25% {
+    font-family: 'Lobster';
+  }
+  12.5% {
+    font-family: 'Bangers';
+  }
+  18.75% {
+    font-family: 'Josefin Slab';
+  }
+  25% {
+    font-family: 'Ubuntu Mono';
+  }
+  31.25% {
+    font-family: 'Lato';
+  }
+  37.5% {
+    font-family: 'Lobster';
+  }
+  43.75% {
+    font-family: 'Josefin Slab';
+  }
+  50% {
+    font-family: 'Bangers';
+  }
+  56.25% {
+    font-family: 'Josefin Slab';
+  }
+  62.5% {
+    font-family: 'Ubuntu Mono';
+  }
+  68.75% {
+    font-family: 'Lato';
+  }
+  75% {
+    font-family: 'Josefin Slab';
+  }
+  81.25% {
+    font-family: 'Bangers';
+  }
+  87.5% {
+    font-family: 'Ubuntu Mono';
+  }
+  92.7% {
+    font-family: 'Lobster';
+  }
+}
+@keyframes flashing-fonts {
+  0% {
+    font-family: 'Lato';
+  }
+  6.25% {
+    font-family: 'Lobster';
+  }
+  12.5% {
+    font-family: 'Bangers';
+  }
+  18.75% {
+    font-family: 'Josefin Slab';
+  }
+  25% {
+    font-family: 'Ubuntu Mono';
+  }
+  31.25% {
+    font-family: 'Lato';
+  }
+  37.5% {
+    font-family: 'Lobster';
+  }
+  43.75% {
+    font-family: 'Josefin Slab';
+  }
+  50% {
+    font-family: 'Bangers';
+  }
+  56.25% {
+    font-family: 'Josefin Slab';
+  }
+  62.5% {
+    font-family: 'Ubuntu Mono';
+  }
+  68.75% {
+    font-family: 'Lato';
+  }
+  75% {
+    font-family: 'Josefin Slab';
+  }
+  81.25% {
+    font-family: 'Bangers';
+  }
+  87.5% {
+    font-family: 'Ubuntu Mono';
+  }
+  92.7% {
+    font-family: 'Lobster';
+  }
+}
+@-webkit-keyframes flashing-size {
+  0% {
+    font-size: 5vw;
+  }
+  8.3% {
+    font-size: 15vw;
+  }
+  16.6% {
+    font-size: 5vw;
+  }
+  27% {
+    font-size: 15vw;
+  }
+  33.3% {
+    font-size: 25vw;
+  }
+  42.6% {
+    font-size: 5vw;
+  }
+  51% {
+    font-size: 20vw;
+  }
+  59.3% {
+    font-size: 20vw;
+  }
+  66.6% {
+    font-size: 10vw;
+  }
+  77% {
+    font-size: 15vw;
+  }
+  85.3% {
+    font-size: 20vw;
+  }
+  91.6% {
+    font-size: 10vw;
+  }
+}
+@keyframes flashing-size {
+  0% {
+    font-size: 15vw;
+  }
+  8.3% {
+    font-size: 30vw;
+  }
+  16.6% {
+    font-size: 5vw;
+  }
+  27% {
+    font-size: 15vw;
+  }
+  33.3% {
+    font-size: 25vw;
+  }
+  42.6% {
+    font-size: 5vw;
+  }
+  51% {
+    font-size: 20vw;
+  }
+  59.3% {
+    font-size: 30vw;
+  }
+  66.6% {
+    font-size: 10vw;
+  }
+  77% {
+    font-size: 15vw;
+  }
+  85.3% {
+    font-size: 30vw;
+  }
+  91.6% {
+    font-size: 10vw;
+  }
+}
+@-webkit-keyframes flashing-text {
+  0% {
+    content: 'Get';
+  }
+  25% {
+    content: 'Tickets';
+  }
+  50% {
+    content: 'Now';
+  }
+  75% {
+    content: 'Push';
+  }
+}
+@keyframes flashing-text {
+  0% {
+    content: 'Get';
+  }
+  25% {
+    content: 'Tickets';
+  }
+  50% {
+    content: 'Now';
+  }
+  75% {
+    content: 'Push';
+  }
+}
+
+
