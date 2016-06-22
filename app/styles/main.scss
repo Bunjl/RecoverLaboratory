@@ -2687,7 +2687,7 @@ h1:before {
   66.6% {
     -webkit-text-stroke-color: #00f;
   }
-  83.3% {
+  100% {
     -webkit-text-stroke-color: #ffa500;
   }
 }
@@ -2707,7 +2707,7 @@ h1:before {
   66.6% {
     -webkit-text-stroke-color: #00f;
   }
-  83.3% {
+  100% {
     -webkit-text-stroke-color: #ffa500;
   }
 }
@@ -2757,7 +2757,7 @@ h1:before {
   87.5% {
     font-family: 'Ubuntu Mono';
   }
-  92.7% {
+  100% {
     font-family: 'Lobster';
   }
 }
@@ -2807,7 +2807,7 @@ h1:before {
   87.5% {
     font-family: 'Ubuntu Mono';
   }
-  92.7% {
+  100% {
     font-family: 'Lobster';
   }
 }
@@ -2845,7 +2845,7 @@ h1:before {
   85.3% {
     font-size: 10vw;
   }
-  91.6% {
+  100% {
     font-size: 10vw;
   }
 }
@@ -2883,7 +2883,7 @@ h1:before {
   85.3% {
     font-size: 10vw;
   }
-  91.6% {
+  100% {
     font-size: 10vw;
   }
 }
@@ -2900,6 +2900,9 @@ h1:before {
   75% {
     content: 'Push';
   }
+  100% {
+    content: 'Push';
+  }
 }
 @keyframes flashing-text {
   0% {
@@ -2912,6 +2915,9 @@ h1:before {
     content: 'Now';
   }
   75% {
+    content: 'Push';
+  }
+  100% {
     content: 'Push';
   }
 }

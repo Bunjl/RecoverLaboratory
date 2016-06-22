@@ -9,6 +9,10 @@
  */
 angular.module('RecoverLaboratory')
   .controller('AboutCtrl', function ($scope, User) {
+    if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+     //Bro update away from FF
+     $scope.firefox = true;
+    }
   	// path chosen.
   	$scope.choice = User.getCurrentUser();
 
