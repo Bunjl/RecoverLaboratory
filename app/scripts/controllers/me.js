@@ -9,7 +9,6 @@
  */
 angular.module('RecoverLaboratory')
   .controller('MeCtrl', function ($scope, User) {
-  	console.log(User.getCurrentUser());
 
 	var ja_face = new JAFace();
 
