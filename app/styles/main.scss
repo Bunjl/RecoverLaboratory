@@ -1,3 +1,12 @@
+
+@media screen and (max-width: 768px) {
+  .logo-bg{position:relative;top:0.5em;left:0;max-height:80px!important;}
+  .logo-front{position:absolute;top:0.5em;left:0%;max-height:80px!important;}
+}
+@media screen and (min-width: 769px) {
+  .logo-bg{position:relative;top:0.5em;left:0;max-height:150px;}
+  .logo-front{position:absolute;top:0.5em;left:25%;max-height:150px;}
+}
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 @font-face {
   font-weight: normal;
