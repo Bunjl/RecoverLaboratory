@@ -2898,36 +2898,36 @@ h1:before {
 }
 @-webkit-keyframes flashing-text {
   0% {
-    content: 'Get';
+    content: 'Sold';
   }
   25% {
-    content: 'Tickets';
+    content: 'Out';
   }
   50% {
-    content: 'Now';
+    content: 'Thank';
   }
   75% {
-    content: 'Push';
+    content: 'You';
   }
   100% {
-    content: 'Push';
+    content: '<3';
   }
 }
 @keyframes flashing-text {
   0% {
-    content: 'Get';
+    content: 'Sold';
   }
   25% {
-    content: 'Tickets';
+    content: 'Out';
   }
   50% {
-    content: 'Now';
+    content: 'Thank';
   }
   75% {
-    content: 'Push';
+    content: 'You';
   }
   100% {
-    content: 'Push';
+    content: '<3';
   }
 }
 
